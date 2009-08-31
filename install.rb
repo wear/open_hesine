@@ -1,8 +1,6 @@
 
-dir = File.dirname(__FILE__)
-templates = File.join(dir,'templates')
-config = File.join('config', 'hesine.yml')
-
-FileUtils.cp File.join(templates, config), File.join(RAILS_ROOT, config) unless File.exist?(File.join(RAILS_ROOT, config))
-
+dest_file = File.join(RAILS_ROOT, "config/hesine.yml")
+src_file = File.join(File.dirname(__FILE__) , 'template/config/hesine.yml')
+FileUtils.cp_r(src_file, dest_file)
+ 
 puts IO.read(File.join(File.dirname(__FILE__), 'README'))
