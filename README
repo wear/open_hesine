@@ -1,0 +1,26 @@
+Hesine
+======
+
+A wrapper for hesine.com api. make it more flexible to use in rubyonrails
+
+In order to use this please read hesine's api doc first
+
+
+Example
+=======  
+
+# bind a phone
+
+Hesine::Bundle.bind(:phone => '1500191xxxx')
+
+#unbind                
+
+Hesine::Bundle.unbind(:phone => '1500191xxxx') 
+
+send a message
+
+Hesine::Message.send(:phone => '1500191xxxx',:from => '"stephen"<support@mhqx001>',:to => "test@mhqx001",
+:subject => 'test',:body => 'test')
+
+
+Copyright (c) 2009 [stephen,wear63659220@gmail.com], released under the MIT license

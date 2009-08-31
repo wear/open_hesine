@@ -1,0 +1,8 @@
+development:
+    system_id: your system_id
+    signature: your signature
+    
+production:
+    system_id: your system_id
+    signature: your signature
+
