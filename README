@@ -5,6 +5,16 @@ A wrapper for hesine.com api. make it more flexible to use in rubyonrails
 
 In order to use this please read hesine's api doc first
 
+Install
+
+install dependency
+rest client,
+  >> ruby script/plugin install git://github.com/adamwiggins/rest-client.git
+crack  
+  >> ruby script/plugin git://github.com/jnunemaker/crack.git
+
+Install open_hesine
+  >> ruby script/plugin install git://github.com/wear/open_hesine.git
 
 Example
 =======  
